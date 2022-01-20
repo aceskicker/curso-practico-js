@@ -27,7 +27,6 @@ console.groupEnd();
 //Codigo del Circulo
 console.group("Circulos");
 
-
 //diametro
 function diametroCirculo(radio){
     return radio * 2;
@@ -48,3 +47,53 @@ function areaCirculo(radio) {
     return (radio * radio) * PI;
 }
 console.groupEnd();
+
+
+//Aqui interactuamos con html
+function calcularPerimetroCuadrado(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
+}
+
+function calcularAreaCuadrado(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+
+    const area = areaCuadrado(value);
+    alert(area);
+}
+
+function calcularPerimetroTriangulo(){
+    const input = document.getElementById("inputTriangulo");
+    const value = input.value;
+
+    const perimetro = perimetroTriangulo(value,value,value);
+    alert(perimetro);
+}
+
+function calcularAreaTriangulo(){
+    const input = document.getElementById("inputTriangulo");
+    const value = input.value;
+
+    const area = areaTriangulo(value);
+    alert(area);
+}
+
+function calcularPerimetroCirculo(){
+    const input = document.getElementById("inputCirculo");
+    const value = input.value;
+
+    const perimetro = perimetroCirculo(value);
+    alert(perimetro);
+}
+
+function calcularAreaCirculo(){
+    const input = document.getElementById("inputCirculo");
+    const value = input.value;
+
+    const area = areaCirculo(value);
+    alert(area);
+}

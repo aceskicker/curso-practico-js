@@ -1,0 +1,137 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+
+  .interface{
+      width: 100%;
+      height: 100vh;
+      border: 1px solid black;
+      display: grid;
+      text-align: center;
+      place-items: center;
+      background-color: rgb(30,129,176);
+  }
+  .explicacion{
+      display: flex;
+      justify-self: center;
+      flex-direction: column;
+      text-align: center;
+      place-content: center;
+  }
+  .explicacion h1{
+    margin-bottom: 18px;
+    font-weight: bold;
+    font-size:var(--lg);
+    color: rgb(238,238,228);
+  }
+  .explicacion p{
+      width: 90vw;
+      padding: 10px;
+      font-size: 18px;
+      border: 1px solid black;
+      border-radius: 8px;
+      text-align: justify;
+      font-size: var(--md);
+      background-color: rgb(234,182,118);
+      color:rgb(6,57,112);
+      
+  }
+
+  .secciones{
+      width: 90vw;
+      height: 70vh;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 400px);
+      grid-gap: 8px;
+      place-content: center;
+      align-items: center;
+      border: 1px solid black;
+      border-radius: 24px;
+      background-color: rgb(234,182,118);
+  }
+  .secciones section{
+      place-self: center;
+      padding: 10px;
+  }
+
+  .Cuadrado, .Triangulo, .Circulo{
+      width: 400px;
+      height: 200px;
+      border: 3px solid rgb(135,62,35);
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+  }
+  .img-cuadrado{
+      width:50px;
+      height: 50px;
+  }
+  .img-triangulo{
+      width: 50px;
+      height: 50px;
+  }
+  .img-circle{
+      width: 50px;
+      height: 50px;
+  }
+  
+  #inputCuadrado, #inputTriangulo, #inputCirculo{
+      width: 90%;
+      margin-bottom: 12px;
+      border-radius: 12px;
+      margin-top: 6px;
+      background-color: rgb(238,238,228);
+      text-align: center;
+  }
+  
+  .label{
+      font-size: var(--md);
+  }
+  button{
+      width: 90%;
+      margin-bottom: 6px;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: rgb(238,238,228);
+      font-weight: bold;
+}
+    @media (max-width: 900px) {
+        img{
+            display: none;
+        }
+        .Cuadrado, .Triangulo, .Circulo{
+            width: 400px;
+            height: 150px;
+            border: 3px solid rgb(135,62,35);
+            border-radius: 12px;
+            display: grid;
+            place-items: center;
+        }
+    }
+
+    @media (min-width: 1362px) {
+    .Cuadrado, .Triangulo, .Circulo{
+        margin-bottom: 150px;
+        }
+
+  }
+
+  
