@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y descuentos | Curso practico de js en platzi</title>
+    <link rel="stylesheet" href="./descuentos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <img src="./img/desFonds.jpg" alt="imagen bf">
+    </header>
+
+    <main>
+        <section class="main-container">
+    <h2>
+        Calcula el descuento de tus productos
+    </h2>
+    
+        <form>
+            <span class="main-img-des"></span>
+
+            <label for="precioProducto" class="label-text">Precio:</label>
+                <div class="form__container-input">
+                    <input type="number" id="precioProducto" placeholder="Inserte numeros..">
+                </div>
+            
+            <label for="descuentoProducto" class="label-text">Descuento</label>
+                 <div class="form__container-input">
+            <input type="number" id="descuentoProducto" placeholder="Inserte numeros..">
+                </div>
+
+            <button type="button" class="form__button" onclick="calcularDescuento()">
+                Calcular descuento
+            </button>
+
+            <label class="label__text" for="InputCupon">Tienes algún CUPON? </label>
+                <div class="form__container-input">
+                    <input id="InputCupon" type="text" placeholder="Inserte CUPON">
+                </div>
+
+                <button class="form__button" type="button" onclick="onclickButtonPriceCupon()">
+                    Descuento + CUPON
+                </button>
+
+
+            <p id="resultP"></p>
+            <p id="resultPC"></p>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <ul>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Soporte</a></li>
+        <li><a href="#">Licencia</a></li>
+    </ul>
+</footer>
+
+    <script src="./descuentos.js"></script>
+</body>
+</html>
